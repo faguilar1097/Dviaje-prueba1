@@ -7,6 +7,8 @@
 
     <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet" />
 
+    <link rel="shortcut icon" href="https://i.ibb.co/sWX3KVT/Rocket-Raccoons-removebg-preview.png" type="image/x-icon">
+
     <link rel="stylesheet" href="../css/publicaciones.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -47,7 +49,7 @@
               </li>
             </ul>
             <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-                  <a href="../html/feed.html"><span class="fondo iconify" data-icon="entypo:map" style="color: white;"></span></a>   
+                  <a href="../html/feedF.html"><span class="fondo iconify" data-icon="entypo:map" style="color: white;"></span></a>   
                 
               </button>
             </form>
@@ -205,57 +207,21 @@
                   />
                      
                 </div>
+                       
+          <div style="padding: 20px;" class=" fondo2 col-md-12 text-center">
+            <input
+                    id="file"
+                    style="text-align: center; border-radius: 20px; border-block-end-width: 3px;"
+                    type="text"
+                    class="form-control"
+                    placeholder="Carga una imagen"
+                    aria-label="Carga una imagen"
+                  />
+             
+            
+           </div>
 
-                <!-- carga de imagenes -->
-
-                <form id="form">
-                  <label>Completa tu información</label>
-                  <!-- <input type="text" name="username" placeholder="Nombre de usuario"> -->
-                  <input type="file" name="image" id="file">
-                  <div class="preview">
-                    <!-- <p id="username"></p> -->
-                    <img id="image">
-                  </div>
-                  <button>Enviar</button>
-                </form>
-                <script>
-                  const $form = document.querySelector('#form')
-              
-                  const $image = document.querySelector('#image')
-                  const $file = document.querySelector('#file')
-                  function renderImage(formData) {
-                    const file = formData.get('image')
-                    const image = URL.createObjectURL(file)
-                    $image.setAttribute('src', image)
-                  }
-              
-                  // const $username = document.querySelector('#username')
-                  // function renderUsername(formData) {
-                  //   const username = formData.get('username')
-                  //   $username.textContent = username
-                  // }
-              
-                  $file.addEventListener('change', (event) => {
-                    const formData = new FormData($form)
-                    renderImage(formData)
-                    fetch('/', {
-                      // method: 'POST',
-                      // body: formData, 
-                   })
-                  })
-              
-                  // $form.addEventListener('submit', (event) => {
-                  //   event.preventDefault()
-                  //   const formData = new FormData(event.currentTarget)
-                  //   // renderUsername(formData)
-                  //   fetch('/', {
-                  //     method: 'POST',
-                  //     body: formData, 
-                  //   })
-                  // })
-                </script>
-
-                <!-- termina codigo carga imagenes -->
+                
           <div style="padding: 20px;" class=" fondo2 col-md-12 text-center">
            <button 
            onclick="captura()"
