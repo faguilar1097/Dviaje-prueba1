@@ -1,3 +1,4 @@
+
 INSERT INTO estado (estado) VALUES ("Aguascalientes");
 INSERT INTO estado (estado) VALUES ("Baja California");
 INSERT INTO estado (estado) VALUES ("Baja California Sur");
