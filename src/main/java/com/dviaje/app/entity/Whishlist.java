@@ -25,8 +25,7 @@ public class Whishlist implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_Whishlist")
 	private Long idWhishlist;
-	@Column(name="usuario_id_usuario")
-	private Long usuarioIdUsuario;
+	
 	
 
 	@OneToOne(fetch=FetchType.LAZY)
