@@ -28,7 +28,7 @@ public class Usuario implements Serializable {
 	private Long publicaciones;
 	
 	@OneToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name = "resena_id_resena")
+	@JoinColumn(name = "resena_id_resena",referencedColumnName="id_resena")
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private Resena resena;
 	
