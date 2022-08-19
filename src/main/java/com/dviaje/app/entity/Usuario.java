@@ -23,9 +23,9 @@ public class Usuario implements Serializable {
 	private String estadorep;
 	private String imagen_perfil;
 	private String lugares_visitados;
-	private Long amigos;
+	private String intereses;
 	private Long wishlist;
-	private Long publicaciones;
+	
 	
 	@OneToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "resena_id_resena",referencedColumnName="id_resena")

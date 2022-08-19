@@ -21,6 +21,7 @@ public class InicioSesion implements Serializable {
 	
 	private String correo;
 	private String contrasena;
+	private int telefono;
 
 	
 	@OneToOne(fetch=FetchType.LAZY)

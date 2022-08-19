@@ -41,10 +41,10 @@ public class UsuarioRestController {
 		return usuarioService.saveUsuario(usuario);
 	}
 	
-	@PutMapping("/usuario")
-	public Usuario replaceUsuario(@RequestBody Usuario usuario) {
+	@PutMapping("/usuario/{id}")
+	public Usuario replaceUsuario(@PathVariable Long id, @RequestBody Usuario usuario) {
 		//Filtros para asegurar que esté un ID y exista
-		return usuarioService.saveUsuario(usuario);
+		return usuarioService.updateUsuario(id,usuario); 
 	}
 	
 	@DeleteMapping("usuario/{id}")
